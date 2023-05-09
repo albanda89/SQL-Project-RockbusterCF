@@ -1,6 +1,6 @@
 ### SQL CTE-common table expression query
 
-### Using CTE quering to find out the average amount paid by the top 5 customers 
+### Using CTE quering to find out the average amount paid by the top 5 customers.
 
 WITH average_total_amount_paid_cte (customer_id,
                                     first_name,
