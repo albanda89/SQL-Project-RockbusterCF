@@ -4,8 +4,7 @@ This SQL project conduct inorder to analysis the sample dataset of a ficticious 
 
 ### **Objectives**.  
 
-Rockbuster Stealth, a fictional company that provides online video rentals who seeking to break into the online video rental market.    
-For that purpose they want to gain insights of their current portfolio performance and customer base to improve the company strategy.
+Rockbuster Stealth, a fictional company that provides online video rentals who seeking to break into the online video rental market.For the above purpose company want to gain insights of their current portfolio performance and customer base to improve the company strategy.
 
 ### **Data**.  
 
