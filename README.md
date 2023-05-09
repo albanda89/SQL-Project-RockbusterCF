@@ -1,6 +1,6 @@
 # Sql-RockbusterCF
 ### **SQL project - Career foundry (2022.09-2023.04)**
-This SQL project conduct inorder to analysis of the sample dataset of a ficticious movie rental company using PostgreSQL as part of the careerfoundry Data Analysis course.
+This SQL project conduct inorder to analysis the sample dataset of a ficticious movie rental company using PostgreSQL as part of the careerfoundry Data Analysis course.
 
 ### **Objectives**.  
 
