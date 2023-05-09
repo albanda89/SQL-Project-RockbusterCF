@@ -1,0 +1,52 @@
+### SQL query with multiple joins.
+
+### SQL queries to find out top gener by sales, top gener revenue, top revenue per unit 
+
+### Top gener by sales
+
+SELECT  F.category_id,
+        C.name,
+        COUNT(F.category_id) AS total_count
+FROM film_category F
+INNER JOIN category C ON F.category_id=C.category_id
+INNER JOIN film D ON D.film_id=F.film_id
+GROUP BY F.category_id,
+         C.name
+ORDER BY F.category_id ASC
+
+
+
+### top revenue by gener
+
+SELECT  F.category_id,
+        C.name,
+        COUNT(F.category_id) AS total_count,
+        SUM(amount) AS Revenue
+FROM film_category F
+INNER JOIN category C ON F.category_id=C.category_id
+INNER JOIN film D ON D.film_id=F.film_id
+INNER JOIN Inventory E ON E.film_id=D.film_id
+INNER JOIN rental G ON G.inventory_id=E.inventory_id
+INNER JOIN payment H ON H.rental_id=G.rental_id
+GROUP BY F.category_id,
+         C.name
+ORDER BY Revenue ASC
+
+
+### Top revenue per unit 
+
+
+SELECT  F.category_id,
+        C.name,
+        COUNT(F.category_id) AS total_count,
+        SUM(amount) AS Revenue,
+        SUM(amount)/COUNT(f.category_id) AS revenue_perunit
+FROM film_category F
+INNER JOIN category C ON F.category_id=C.category_id
+INNER JOIN film D ON D.film_id=F.film_id
+INNER JOIN Inventory E ON E.film_id=D.film_id
+INNER JOIN rental G ON G.inventory_id=E.inventory_id
+INNER JOIN payment H ON H.rental_id=G.rental_id
+GROUP BY F.category_id,
+         C.name
+ORDER BY revenue_perunit DESC
