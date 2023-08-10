@@ -8,7 +8,7 @@ Rockbuster Stealth is a fictional company that provides online video rentals see
 
 ### **Data**.  
 
-Opensource dataset from PostgreSQL available in the Project Brief
+Opensource dataset from PostgreSQL available in the [Project Brief](https://images.careerfoundry.com/public/courses/data-immersion/A3/A3_Data_Project_Brief%20.pdf)
 
 ### **Visualization**. 
 
